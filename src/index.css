@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://static.vecteezy.com/system/resources/previews/005/441/420/non_2x/abstract-white-and-gray-gradient-background-with-geometric-shape-illustration-free-vector.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #333;
+  background-color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  width: 244px;
+  height: 244px;
+  border: 4px solid #333;
+  border-radius: 10px;
+  background-color: #ccc;
+  margin: auto;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  margin: auto;
+}
+
+.game-info {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.game-info ol {
+  padding-left: 20px;
+}
+
+.game-info li {
+  margin-bottom: 5px;
+}
+
+.game-info button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.game-info button:hover {
+  text-decoration: underline;
+}
