@@ -40,7 +40,15 @@ To run this project locally, follow these steps:
 
 ## Contributing
 
-Contributions are welcome! Feel free to open an issue or submit a pull request to suggest improvements or new features.
+Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature (`git checkout -b feature/YourFeatureName`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add some feature'`).
+5. Push to the branch (`git push origin feature/YourFeatureName`).
+6. Create a new Pull Request.
+
 
 
 
