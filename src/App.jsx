@@ -51,10 +51,14 @@ function Board({ xIsNext, squares, onPlay }) {
 
 // Game Component: Represents the overall game
 export default function Game() {
-  // State to keep track of game history and current move
-  const [history, setHistory] = useState([Array(9).fill(null)]);
-  const [currentMove, setCurrentMove] = useState(0);
+  // State to keep track of the game's history of moves and the current move number
+  const [history, setHistory] = useState([Array(9).fill(null)]); // Initial state is an array of 9 nulls (empty board)
+  const [currentMove, setCurrentMove] = useState(0); // Tracks the current move number (starts at 0)
+
+  // Determines if it's X's turn (X goes on even moves, O on odd moves)
   const xIsNext = currentMove % 2 === 0;
+
+  // Get the current board configuration based on the move history
   const currentSquares = history[currentMove];
 
   // Function to handle jump to a specific move
