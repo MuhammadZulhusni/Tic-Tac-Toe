@@ -27,12 +27,16 @@ function Board({ xIsNext, squares, onPlay }) {
   }
 
   // Determine the status of the game (winner or next player's turn)
+  // Calculate the winner based on the current state of the squares
   const winner = calculateWinner(squares);
+  // Initialize a variable to hold the game status message
   let status = "";
+  // Check if there's a winner
   if (winner) {
-    status = "Winner: " + winner;
+    status = "Winner: " + winner; // Set the status message to indicate the winner
   } else {
-    status = "Next player: " + (xIsNext ? "X" : "O");
+    // If no winner, set the status to indicate whose turn it is next
+    status = "Next player: " + (xIsNext ? "X" : "O"); // Determine the next player based on xIsNext
   }
 
   // Render the game board
